@@ -1,6 +1,6 @@
 {
   "name": "@peerplaysio/libcrypto",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Common javascript cryptographic utilities. Based on sjcl.",
   "main": "lib/crypto.js",
   "license": "MIT",
@@ -9,12 +9,17 @@
     "clean": "rm -Rf lib",
     "fmt": "prettier --write '{src,scripts}/**/*.js' && eslint '{src,scripts}/**/*.js'",
     "build": "./scripts/build.js",
+    "browserify":"browserify ./lib/crypto.js > ./lib/crypto.min.js",
     "sjcl-test": "./scripts/test.js",
     "test": "./scripts/build.js && ./scripts/test.js && ./scripts/test.js && tape 'test/*.test.js'"
   },
   "devDependencies": {
+    "browserify": "^17.0.0",
     "eslint": "^4.10.0",
     "prettier": "~1.8.2",
     "tape": "^4.8.0"
+  },
+  "dependencies": {
+
   }
 }
