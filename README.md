@@ -12,7 +12,7 @@ is excluded from your builds.
 
 Otherwise, just
 ```sh
-$ yarn install peerplays-crypto
+$ yarn install @peerplaysio/libcrypto
 ```
 
 ## API
